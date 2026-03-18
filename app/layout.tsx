@@ -1,0 +1,29 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "braain.io – Digitale Plattform für Erdbau- und Tiefbauunternehmen",
+  description:
+    "Von Auftrag bis Rechnung – verwalten Sie Baustellen, Maschinen, Disposition, Rapporte und Rechnungen zentral in einer modernen Plattform.",
+  keywords: [
+    "Erdbau", "Tiefbau", "Baustellenmanagement", "Disposition",
+    "Rapporte", "Rechnungsstellung", "Software", "Digitalisierung",
+  ],
+  openGraph: {
+    title: "braain.io – Digitale Plattform für Erdbau & Tiefbau",
+    description:
+      "Plane Baustellen, disponiere Maschinen und Personal, erfasse Rapporte und erstelle Rechnungen – alles in einer zentralen Plattform.",
+    type: "website",
+    locale: "de_CH",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="de" className="scroll-smooth">
+      <body className="bg-white text-gray-900 antialiased font-sans">{children}</body>
+    </html>
+  );
+}
