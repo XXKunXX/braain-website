@@ -39,7 +39,7 @@ export default function Hero() {
         {/* Subheadline */}
         <div className="text-center max-w-2xl mx-auto mb-6">
           <p className="text-lg sm:text-xl font-semibold text-gray-700">
-            All-in-One Plattform für Erdbau & Tiefbau
+            All-in-One Plattform für Erd- & Tiefbau
           </p>
         </div>
 
