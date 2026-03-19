@@ -1,18 +1,12 @@
 import Link from "next/link";
 
-const links = {
-  Produkt: ["Funktionen", "Disposition", "Rapporte", "Rechnungsstellung", "Preise"],
-  Unternehmen: ["Über uns", "Blog", "Karriere", "Partner"],
-  Ressourcen: ["Support", "Dokumentation", "Community", "Datenschutz"],
-};
-
 export default function Footer() {
   return (
     <footer style={{ background: "#f5f5f5", borderTop: "1px solid #e5e7eb" }}>
       <div className="max-w-6xl mx-auto px-6 lg:px-8 pt-16 pb-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
+        <div className="mb-14">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-1">
+          <div>
             <div className="flex items-center gap-2.5 mb-5">
               <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: "#0a0a0a" }}>
                 <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -28,21 +22,6 @@ export default function Footer() {
             </p>
             <p className="text-gray-400 text-xs">Entwickelt in Österreich 🇦🇹</p>
           </div>
-
-          {Object.entries(links).map(([cat, items]) => (
-            <div key={cat}>
-              <h3 className="text-gray-900 text-xs font-bold uppercase tracking-widest mb-5">{cat}</h3>
-              <ul className="space-y-3">
-                {items.map((item) => (
-                  <li key={item}>
-                    <Link href="#" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
         </div>
 
         {/* Newsletter */}
