@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     question: "Was ist braain.io und für wen ist es geeignet?",
-    answer: "braain.io ist eine digitale All-in-One Plattform speziell für Erdbau- und Tiefbauunternehmen. Sie zentralisiert Baustellenmanagement, Disposition, Lieferscheine und Rechnungsstellung in einem System.",
+    answer: "braain.io ist eine digitale All-in-One Plattform speziell für KMUs. Sie zentralisiert Baustellenmanagement, Disposition, Lieferscheine und Rechnungsstellung in einem System.",
   },
   {
     question: "Ist braain.io auch für kleine Betriebe geeignet?",

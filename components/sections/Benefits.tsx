@@ -60,7 +60,7 @@ export default function Benefits() {
               Führend durch Innovation, gewählt von vielen
             </h2>
             <p className="text-gray-500 text-lg leading-relaxed mb-10">
-              Wir liefern eine vollständige Lösung für Erdbau- und Tiefbauunternehmen – modernste Technologie kombiniert mit tiefem Branchenwissen.
+              Wir liefern eine vollständige Lösung für KMUs – modernste Technologie kombiniert mit tiefem Branchenwissen.
             </p>
 
             {/* Stats */}

@@ -31,8 +31,8 @@ const plans = [
   },
   {
     name: "Enterprise",
-    price: 149,
-    description: "Für grosse Tiefbauunternehmen mit individuellen Anforderungen.",
+    price: 199,
+    description: "Für große Unternehmen mit individuellen Anforderungen.",
     cta: "Demo anfragen",
     highlighted: false,
     features: [

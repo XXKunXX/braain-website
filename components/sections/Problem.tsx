@@ -67,7 +67,7 @@ export default function Problem() {
             Kennen Sie das?
           </h2>
           <p className="mt-4 text-gray-500 text-lg leading-relaxed">
-            Viele Erdbau- und Tiefbauunternehmen kämpfen täglich mit denselben Herausforderungen. Das kostet Zeit, Geld und Nerven.
+            Viele KMUs kämpfen täglich mit denselben Herausforderungen. Das kostet Zeit, Geld und Nerven.
           </p>
         </div>
 

@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="flex justify-center mb-8">
           <span className="inline-flex items-center gap-2 border border-gray-200 bg-white text-gray-600 text-xs font-semibold px-5 py-2 rounded-full shadow-sm">
             <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#0a0a0a" }} />
-            Speziell für Erdbau- und Tiefbauunternehmen
+            Speziell für KMUs im Baubereich
           </span>
         </div>
 
@@ -39,7 +39,7 @@ export default function Hero() {
         {/* Subheadline */}
         <div className="text-center max-w-2xl mx-auto mb-6">
           <p className="text-lg sm:text-xl font-semibold text-gray-700">
-            All-in-One Plattform für Erd- & Tiefbau
+            All-in-One Plattform für KMUs
           </p>
         </div>
 
