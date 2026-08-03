@@ -1,6 +1,12 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
+
+const YOUTUBE_ID = "SqPzTlBohiA";
 
 export default function DashboardMockup() {
+  const [playing, setPlaying] = useState(false);
+
   return (
     <div className="relative max-w-5xl mx-auto">
       {/* Browser Chrome */}
@@ -17,16 +23,40 @@ export default function DashboardMockup() {
           </div>
         </div>
 
-        {/* Dashboard Screenshot */}
-        <div className="w-full bg-white">
-          <Image
-            src="/dashboard.png"
-            alt="braain.io Dashboard"
-            width={2914}
-            height={1476}
-            className="w-full h-auto block"
-            priority
-          />
+        {/* Product Video */}
+        <div className="relative w-full aspect-video bg-black">
+          {playing ? (
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src={`https://www.youtube-nocookie.com/embed/${YOUTUBE_ID}?autoplay=1&rel=0`}
+              title="braain.io Produktvideo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          ) : (
+            <button
+              type="button"
+              onClick={() => setPlaying(true)}
+              className="group absolute inset-0 w-full h-full"
+              aria-label="Produktvideo abspielen"
+            >
+              <img
+                src={`https://img.youtube.com/vi/${YOUTUBE_ID}/maxresdefault.jpg`}
+                alt="braain.io Produktvideo"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+                <div
+                  className="w-20 h-20 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform"
+                  style={{ background: "#e6fd5a" }}
+                >
+                  <svg className="w-8 h-8 ml-1" viewBox="0 0 24 24" fill="#0a0a0a">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          )}
         </div>
       </div>
 
