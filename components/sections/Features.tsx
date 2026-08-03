@@ -1,4 +1,4 @@
-const tabs = ["CRM", "Baustellenmanagement", "Finanz (geplant)", "Lager (geplant)"];
+const tabs = ["CRM", "Baustellenmanagement", "Finanz", "Lager"];
 
 const features = [
   {
