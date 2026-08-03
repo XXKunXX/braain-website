@@ -7,7 +7,7 @@ export async function POST(request: Request) {
 
   try {
     await resend.emails.send({
-      from: "braain.io <onboarding@resend.dev>",
+      from: "braain <onboarding@resend.dev>",
       to: "rs@braain.io",
       subject: `Demo-Anfrage von ${name} – ${company}`,
       html: `

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8 py-8">
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-gray-400 text-xs">© {new Date().getFullYear()} braain.io. Alle Rechte vorbehalten. · Entwickelt in Österreich 🇦🇹</p>
+          <p className="text-gray-400 text-xs">© {new Date().getFullYear()} braain. Alle Rechte vorbehalten. · Entwickelt in Österreich 🇦🇹</p>
           <div className="flex items-center gap-6">
             <Link href="#" className="text-gray-400 hover:text-gray-700 text-xs transition-colors">AGB</Link>
             <Link href="#" className="text-gray-400 hover:text-gray-700 text-xs transition-colors">Datenschutz</Link>

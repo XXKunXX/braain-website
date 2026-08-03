@@ -18,7 +18,7 @@ export default function Solution() {
               Alles in einem System
             </h2>
             <p className="mt-4 text-gray-500 text-lg leading-relaxed mb-8">
-              braain.io verbindet alle Bereiche Ihres Unternehmens in einer einzigen Plattform. Keine Insellösungen, keine Doppelarbeit – ein durchgängiger digitaler Prozess.
+              braain verbindet alle Bereiche Ihres Unternehmens in einer einzigen Plattform. Keine Insellösungen, keine Doppelarbeit – ein durchgängiger digitaler Prozess.
             </p>
             <div className="space-y-3">
               {[
@@ -47,7 +47,7 @@ export default function Solution() {
                 <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
                 </svg>
-                <span className="text-xs font-bold mt-1" style={{ color: "#e6fd5a" }}>braain.io</span>
+                <span className="text-xs font-bold mt-1" style={{ color: "#e6fd5a" }}>braain</span>
               </div>
 
               <div className="flex items-center gap-2">

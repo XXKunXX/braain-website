@@ -4,20 +4,20 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Was ist braain.io und für wen ist es geeignet?",
-    answer: "braain.io ist eine digitale All-in-One Plattform speziell für KMUs. Sie zentralisiert Baustellenmanagement, Disposition, Lieferscheine und Rechnungsstellung in einem System.",
+    question: "Was ist braain und für wen ist es geeignet?",
+    answer: "braain ist eine digitale All-in-One Plattform speziell für KMUs. Sie zentralisiert Baustellenmanagement, Disposition, Lieferscheine und Rechnungsstellung in einem System.",
   },
   {
-    question: "Ist braain.io auch für kleine Betriebe geeignet?",
-    answer: "Ja, braain.io ist skalierbar und passt sich Ihren Bedürfnissen an. Unser Starter-Plan ist speziell für kleinere Betriebe konzipiert und bietet alle wichtigen Grundfunktionen zu einem fairen Preis.",
+    question: "Ist braain auch für kleine Betriebe geeignet?",
+    answer: "Ja, braain ist skalierbar und passt sich Ihren Bedürfnissen an. Unser Starter-Plan ist speziell für kleinere Betriebe konzipiert und bietet alle wichtigen Grundfunktionen zu einem fairen Preis.",
   },
   {
     question: "Wie funktioniert die Mobile App auf der Baustelle?",
-    answer: "Die braain.io Mobile App ist für iOS und Android verfügbar. Bauleiter können damit Lieferscheine erfassen, Fotos hochladen und digital signieren – auch bei schlechtem Netz werden Daten lokal gespeichert und synchronisiert.",
+    answer: "Die braain Mobile App ist für iOS und Android verfügbar. Bauleiter können damit Lieferscheine erfassen, Fotos hochladen und digital signieren – auch bei schlechtem Netz werden Daten lokal gespeichert und synchronisiert.",
   },
   {
-    question: "Wie sicher sind meine Daten bei braain.io?",
-    answer: "Ihre Daten werden verschlüsselt auf Servern in der EU gespeichert. braain.io ist vollständig DSGVO-konform. Es werden tägliche Backups durchgeführt und der Datenzugriff ist jederzeit kontrollierbar.",
+    question: "Wie sicher sind meine Daten bei braain?",
+    answer: "Ihre Daten werden verschlüsselt auf Servern in der EU gespeichert. braain ist vollständig DSGVO-konform. Es werden tägliche Backups durchgeführt und der Datenzugriff ist jederzeit kontrollierbar.",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function FAQ() {
             Häufige Fragen
           </h2>
           <p className="text-gray-500 text-lg leading-relaxed">
-            Alles was Sie über braain.io wissen müssen – von Einrichtung bis Datenschutz.
+            Alles was Sie über braain wissen müssen – von Einrichtung bis Datenschutz.
           </p>
         </div>
 

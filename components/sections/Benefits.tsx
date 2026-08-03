@@ -54,7 +54,7 @@ export default function Benefits() {
           {/* Left text */}
           <div>
             <p className="text-sm font-bold uppercase tracking-widest mb-4" style={{ color: "#6b7280" }}>
-              Warum braain.io?
+              Warum braain?
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
               Führend durch Innovation, gewählt von vielen

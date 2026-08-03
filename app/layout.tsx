@@ -9,7 +9,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "braain.io – Digitale Plattform für Erdbau- und Tiefbauunternehmen",
+  title: "braain – Digitale Plattform für Erdbau- und Tiefbauunternehmen",
   description:
     "Von Auftrag bis Rechnung – verwalten Sie Baustellen, Maschinen, Disposition, Rapporte und Rechnungen zentral in einer modernen Plattform.",
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Rapporte", "Rechnungsstellung", "Software", "Digitalisierung",
   ],
   openGraph: {
-    title: "braain.io – Digitale Plattform für Erdbau & Tiefbau",
+    title: "braain – Digitale Plattform für Erdbau & Tiefbau",
     description:
       "Plane Baustellen, disponiere Maschinen und Personal, erfasse Rapporte und erstelle Rechnungen – alles in einer zentralen Plattform.",
     type: "website",

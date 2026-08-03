@@ -30,7 +30,7 @@ export default function DashboardMockup() {
             <iframe
               className="absolute inset-0 w-full h-full"
               src={`https://www.youtube-nocookie.com/embed/${YOUTUBE_ID}?autoplay=1&rel=0`}
-              title="braain.io Produktvideo"
+              title="braain Produktvideo"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
@@ -43,7 +43,7 @@ export default function DashboardMockup() {
             >
               <Image
                 src="/video-thumbnail.jpg"
-                alt="braain.io Produktvideo"
+                alt="braain Produktvideo"
                 fill
                 sizes="(max-width: 1024px) 100vw, 1024px"
                 className="object-cover"

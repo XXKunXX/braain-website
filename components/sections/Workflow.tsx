@@ -2,7 +2,7 @@ const steps = [
   {
     number: "01",
     title: "Anfrage anlegen",
-    description: "Kundenanfragen direkt in braain.io erfassen und verwalten. Alle Informationen zentral gespeichert – kein Zettelchaos, kein vergessener Kontakt.",
+    description: "Kundenanfragen direkt in braain erfassen und verwalten. Alle Informationen zentral gespeichert – kein Zettelchaos, kein vergessener Kontakt.",
   },
   {
     number: "02",
@@ -12,7 +12,7 @@ const steps = [
   {
     number: "03",
     title: "Auftrag & Baustelle erfassen",
-    description: "Neuer Auftrag wird direkt in braain.io erfasst. Baustelle anlegen, Pläne hochladen und alle Details zentral hinterlegen – in Sekunden startklar.",
+    description: "Neuer Auftrag wird direkt in braain erfasst. Baustelle anlegen, Pläne hochladen und alle Details zentral hinterlegen – in Sekunden startklar.",
   },
   {
     number: "04",
@@ -44,7 +44,7 @@ export default function Workflow() {
             Schritt für Schritt zum digitalen Prozess
           </h2>
           <p className="text-gray-500 text-lg leading-relaxed">
-            braain.io digitalisiert Ihren gesamten Ablauf – von der Anfrage bis zur automatischen Rechnungsstellung.
+            braain digitalisiert Ihren gesamten Ablauf – von der Anfrage bis zur automatischen Rechnungsstellung.
           </p>
         </div>
 

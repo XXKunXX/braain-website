@@ -32,9 +32,9 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5">
-            <Image src="/logo.png" alt="braain.io" width={36} height={36} className="w-9 h-9 rounded-xl" priority />
+            <Image src="/logo.png" alt="braain" width={36} height={36} className="w-9 h-9 rounded-xl" priority />
             <span className="text-lg font-bold tracking-tight text-gray-900">
-              braain<span style={{ color: "#0a0a0a" }}>.io</span>
+              braain
             </span>
           </Link>
 

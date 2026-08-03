@@ -41,7 +41,7 @@ export default function CTA() {
               Eine Plattform. Jede Baustelle.
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-8">
-              Bereit Ihren Betrieb zu digitalisieren? Starten Sie Ihre braain.io Reise jetzt. Zeit smarter zu arbeiten, nicht härter.
+              Bereit Ihren Betrieb zu digitalisieren? Starten Sie Ihre braain Reise jetzt. Zeit smarter zu arbeiten, nicht härter.
             </p>
 
             <div className="space-y-4 mb-10">
