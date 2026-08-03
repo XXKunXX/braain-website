@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "braain.io – Digitale Plattform für Erdbau- und Tiefbauunternehmen",
@@ -22,7 +29,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de" className="scroll-smooth">
+    <html lang="de" className={`scroll-smooth ${dmSans.variable}`}>
       <body className="bg-white text-gray-900 antialiased font-sans">{children}</body>
     </html>
   );
