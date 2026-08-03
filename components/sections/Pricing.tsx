@@ -31,7 +31,7 @@ const plans = [
   },
   {
     name: "Enterprise",
-    price: 199,
+    price: "Auf Anfrage",
     description: "Für große Unternehmen mit individuellen Anforderungen.",
     cta: "Demo anfragen",
     highlighted: false,
@@ -99,20 +99,31 @@ export default function Pricing() {
               </div>
 
               <div className="mb-6">
-                <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: plan.highlighted ? "rgba(255,255,255,0.4)" : "#9ca3af" }}>
-                  ab
-                </p>
-                <div className="flex items-end gap-1">
+                {typeof plan.price === "number" ? (
+                  <>
+                    <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: plan.highlighted ? "rgba(255,255,255,0.4)" : "#9ca3af" }}>
+                      ab
+                    </p>
+                    <div className="flex items-end gap-1">
+                      <span
+                        className="text-5xl font-black"
+                        style={{ color: plan.highlighted ? "#fff" : "#111827" }}
+                      >
+                        € {plan.price}
+                      </span>
+                    </div>
+                    <p className="text-sm mt-1" style={{ color: plan.highlighted ? "rgba(255,255,255,0.5)" : "#9ca3af" }}>
+                      pro Nutzer / Monat
+                    </p>
+                  </>
+                ) : (
                   <span
-                    className="text-5xl font-black"
+                    className="text-4xl font-black"
                     style={{ color: plan.highlighted ? "#fff" : "#111827" }}
                   >
-                    € {plan.price}
+                    {plan.price}
                   </span>
-                </div>
-                <p className="text-sm mt-1" style={{ color: plan.highlighted ? "rgba(255,255,255,0.5)" : "#9ca3af" }}>
-                  pro Nutzer / Monat
-                </p>
+                )}
               </div>
 
               <a
