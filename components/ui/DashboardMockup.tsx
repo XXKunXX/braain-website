@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const YOUTUBE_ID = "SqPzTlBohiA";
 
@@ -40,10 +41,13 @@ export default function DashboardMockup() {
               className="group absolute inset-0 w-full h-full"
               aria-label="Produktvideo abspielen"
             >
-              <img
-                src={`https://img.youtube.com/vi/${YOUTUBE_ID}/maxresdefault.jpg`}
+              <Image
+                src="/video-thumbnail.jpg"
                 alt="braain.io Produktvideo"
-                className="w-full h-full object-cover"
+                fill
+                sizes="(max-width: 1024px) 100vw, 1024px"
+                className="object-cover"
+                priority
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
                 <div
