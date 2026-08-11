@@ -7,15 +7,22 @@ export default function CTA() {
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, company, email }),
-    });
-    setSubmitted(true);
+    setError(false);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, company, email }),
+      });
+      if (!res.ok) throw new Error("Request failed");
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    }
   };
 
   return (
@@ -132,6 +139,11 @@ export default function CTA() {
                   >
                     Demo anfragen
                   </button>
+                  {error && (
+                    <p className="text-xs text-red-500 text-center font-medium">
+                      Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt.
+                    </p>
+                  )}
                   <p className="text-xs text-gray-400 text-center">
                     Mit dem Absenden stimmen Sie unserer{" "}
                     <a href="#" className="hover:underline text-gray-600">Datenschutzerklärung</a> zu.
