@@ -12,7 +12,7 @@ export const dynamic = "force-dynamic";
 export async function POST(req: Request) {
   // Schalter: Online-Bestellung erst freigeben, wenn CHECKOUT_AKTIV=true gesetzt ist.
   // Solange er fehlt, öffnet die Website stattdessen das Anfrage-Formular.
-  if (process.env.CHECKOUT_AKTIV !== "true") {
+     if (process.env.CHECKOUT_AKTIV !== "true" && process.env.VERCEL_ENV !== "preview") {
     return Response.json({ deaktiviert: true }, { status: 403 });
   }
 
