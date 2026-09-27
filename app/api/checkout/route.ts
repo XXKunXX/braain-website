@@ -53,7 +53,7 @@ export async function POST(req: Request) {
       [META.rolle]: takt === "monat" ? "komplett" : "grundgebuehr",
     };
 
-    const base = siteUrl();
+           const base = (process.env.SITE_URL || new URL(req.url).origin).replace(/\/+$/, "");
     const session = await s.checkout.sessions.create({
       mode: "subscription",
       line_items: lineItems,
